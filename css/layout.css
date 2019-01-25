@@ -420,8 +420,40 @@ button:hover {
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 }	
 @media screen and (max-width: 1280px){
-	
+	.header-info-text {
+        font-size: 12px;
+    }
+    .header-info-phone-a {
+        font-size: 18px;
+    }
+    .footer-wrap {
+        display: block;
+    }
+    .footer-text {
+        margin: 0 auto 20px;
+    }
+    .footer-text p {
+        text-align: center;
+    }
 }
 @media screen and (max-width: 767px){
-
+    .b-block {
+        padding: 0 10px;
+    }
+    body {
+        padding-top: 95px;
+    }
+    .header-logo {
+        box-sizing: border-box;
+        padding-right: 10px;
+    }
+    .header-info {
+        padding-left: 10px;
+    }
+    .header-logo-text, .header-info-text {
+        display: none;
+    }
+    .header-info-phone {
+        width: 100%;
+    }
 }
