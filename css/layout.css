@@ -333,6 +333,9 @@ button:hover {
     color: rgb(54, 69, 84);
     margin-bottom: 10px;
 }
+.header-info-phone-a.mobile {
+    display: none;
+}
 .header-info-phone-btn {
     display: block;
     margin-left: auto;
@@ -346,6 +349,13 @@ button:hover {
     font-family: 'MuseoSansCyrl-500';
     font-size: 16px;
     color: rgb(54, 69, 84);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header-info-phone-btn:hover {
+    background-color: rgba(229, 57, 53, 0.1);
 }
 
 .footer {
@@ -406,6 +416,16 @@ button:hover {
 }
 .social-list li a {
     display: inline-block;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.social-list li a:hover {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 .social-list li a img {
     display: block;
@@ -455,5 +475,11 @@ button:hover {
     }
     .header-info-phone {
         width: 100%;
+    }
+    .header-info-phone-a.desktop {
+        display: none;
+    }
+    .header-info-phone-a.mobile {
+        display: inline-block;
     }
 }

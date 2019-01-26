@@ -25,9 +25,16 @@
 	font-size: 20px;
 	line-height: 1.3;
 }
-.b-1-text a {
+.b-1-text span {
 	color: #00e676;
 	font-family: 'MuseoSansCyrl-700';
+	white-space: nowrap;
+}
+.b-1-text a {
+	display: none;
+	color: #00e676;
+	font-family: 'MuseoSansCyrl-700';
+	white-space: nowrap;
 }
 
 .b-2 {
@@ -58,7 +65,30 @@
 	font-family: 'MuseoSansCyrl-500';
 	font-size: 18px;
 	color: rgb(0, 200, 83);
+	position: relative;
+	padding-right: 15px;
 	margin-bottom: 40px;
+}
+.b-2 .more-a::before {
+	content: '>';
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-2 .more-a:hover:before {
+	-webkit-transform: translate(5px, -50%);
+	-moz-transform: translate(5px, -50%);
+	-ms-transform: translate(5px, -50%);
+	transform: translate(5px, -50%);
 }
 .b-2-slider {
 	position: relative;
@@ -161,6 +191,13 @@
 	font-family: 'MuseoSansCyrl-500';
 	font-size: 18px;
 	color: #ffffff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-4 .order-btn:hover {
+	background-color: rgb(255, 43, 88);
 }
 
 .b-5 .b-block {
@@ -185,6 +222,13 @@
 	font-family: 'MuseoSansCyrl-500';
 	font-size: 18px;
 	color: #ffffff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-5 .order-btn:hover {
+	background-color: rgb(255, 43, 88);
 }
 
 .b-6 {
@@ -354,6 +398,13 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.reviews-list li:hover {
+	box-shadow: rgba(144, 164, 183, 0.5) 0px 0px 10px;
 }
 .review-person {
 	display: block;
@@ -433,6 +484,29 @@
 	font-family: 'MuseoSansCyrl-500';
 	font-size: 16px;
 	color: rgb(0, 200, 83);
+	position: relative;
+	padding-right: 15px;
+}
+.service-list .li-wrap a::before {
+	content: '>';
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.service-list .li-wrap a:hover:before {
+	-webkit-transform: translate(5px, -50%);
+	-moz-transform: translate(5px, -50%);
+	-ms-transform: translate(5px, -50%);
+	transform: translate(5px, -50%);
 }
 
 .auto-list li {
@@ -489,6 +563,13 @@
 	font-family: 'MuseoSansCyrl-500';
 	font-size: 18px;
 	color: #ffffff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.auto-list .li-btn:hover {
+	background-color: rgb(255, 43, 88);
 }
 
 .i-form {
@@ -515,6 +596,10 @@
 	color: #ffffff;
 	font-family: 'MuseoSansCyrl-300';
 	margin-bottom: 20px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .i-form textarea {
 	display: block;
@@ -531,6 +616,10 @@
 	margin-bottom: 20px;
 	resize: none;
 	height: 100px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .i-form input::-webkit-input-placeholder, .i-form textarea::-webkit-input-placeholder {
 	color: #ffffff;
@@ -544,6 +633,9 @@
 .i-form input:focus:-moz-placeholder, .i-form textarea:focus:-moz-placeholder {
 	color: transparent;
 }
+.i-form input:focus, .i-form textarea:focus {
+	background-color: rgba(227, 242, 253, 0.5);
+}
 .i-form .form-btn {
 	display: block;
 	width: 100%;
@@ -553,10 +645,17 @@
 	box-shadow: 0px 2px 5px 0px rgba(2, 2, 2, 0.25);
 	font-family: 'MuseoSansCyrl-500';
 	font-size: 18px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .i-form .form-btn.next-btn {
 	background-color: rgb(255, 23, 68);
 	color: #ffffff;
+}
+.i-form .form-btn.next-btn:hover {
+	background-color: rgb(255, 43, 88);
 }
 .i-form button {
 	display: block;
@@ -570,6 +669,13 @@
 	border: 0;
 	background-color: rgb(255, 23, 68);
 	color: #ffffff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.i-form button:hover {
+	background-color: rgb(255, 43, 88);
 }
 .button-text {
 	display: inline-block;
@@ -752,6 +858,12 @@
 	}
 }
 @media screen and (max-width: 767px){
+	.b-1-text a {
+		display: inline;
+	}
+	.b-1-text span {
+		display: none;
+	}
 	.preim-list {
 		display: block;
 	}
