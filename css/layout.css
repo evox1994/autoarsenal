@@ -432,6 +432,278 @@ button:hover {
     max-width: 100%;
 }
 
+.button-text {
+    display: inline-block;
+    max-width: 100%;
+    font-size: 14px;
+    color: rgb(193, 193, 193);
+    line-height: 1.2;
+    position: relative;
+    text-align: left;
+    padding-left: 35px;
+    margin-top: 20px;
+}
+.button-text a {
+    color: #ffffff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.button-text a:hover {
+    color: rgb(0, 200, 83);
+}
+.button-text .radio-btn {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(207, 216, 220);
+    background-color: rgb(207, 216, 220);
+    border-radius: 5px;
+    left: 0;
+    top: calc(50% - 12px);
+    box-sizing: content-box;
+}
+.button-text .radio-btn.error {
+    border-color: #ff0000;
+}
+.button-text .radio-btn:hover {
+    cursor: pointer;
+}
+.button-text .radio-btn.active::before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 2px;
+    position: absolute;
+    left: 1px;
+    top: 8px;
+    background-color: rgb(0, 200, 83);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.button-text .radio-btn.active::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    background-color: rgb(0, 200, 83);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.popup {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid rgb(207, 216, 220);
+    background-color: rgb(61, 64, 66);
+    border-radius: 10px;
+    max-width: 650px;
+    padding: 50px 70px;
+    width: 95%;
+    text-align: center;
+}
+.popup:hover {
+    cursor: default;
+}
+.popup-name {
+    text-align: center;
+    font-family: 'MuseoSansCyrl-700';
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.popup-name span {
+    color: rgb(0, 200, 83);
+}
+.popup-subname {
+    text-align: center;
+    font-family: 'MuseoSansCyrl-500';
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.popup-subname span {
+    color: rgb(0, 200, 83);
+}
+.popup form {
+    display: block;
+    margin: 0 auto;
+    max-width: 330px;
+    width: 100%;
+}
+.popup form input {
+    display: block;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(227, 242, 253, 0.302);
+    border: 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'MuseoSansCyrl-300';
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.popup form textarea {
+    display: block;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(227, 242, 253, 0.302);
+    border: 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'MuseoSansCyrl-300';
+    margin-bottom: 20px;
+    resize: none;
+    height: 100px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.popup form input::-webkit-input-placeholder, .popup form textarea::-webkit-input-placeholder {
+    color: #ffffff;
+}
+.popup form input:-moz-placeholder, .popup form textarea:-moz-placeholder {
+    color: #ffffff;
+}
+.popup form input:focus::-webkit-input-placeholder, .popup form textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+.popup form input:focus:-moz-placeholder, .popup form textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+.popup form input:focus, .popup form textarea:focus {
+    background-color: rgba(227, 242, 253, 0.5);
+}
+.popup form .form-btn {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(2, 2, 2, 0.25);
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 18px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.popup form .form-btn.next-btn {
+    background-color: rgb(255, 23, 68);
+    color: #ffffff;
+}
+.popup form .form-btn.next-btn:hover {
+    background-color: rgb(255, 43, 88);
+}
+.popup form button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(2, 2, 2, 0.25);
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 18px;
+    border: 0;
+    background-color: rgb(255, 23, 68);
+    color: #ffffff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.popup form button:hover {
+    background-color: rgb(255, 43, 88);
+}
+
+.fancybox-slide--html .fancybox-close-small {
+    padding: 0;
+}
+.fancybox-button svg path {
+    fill: #ffffff;
+}
+
+.cookie {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 50;
+    background-color: rgb(77, 93, 101);
+}
+.cookie .b-block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cookie.active {
+    display: block;
+}
+.cookie p {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    font-size: 14px;
+    color: rgb(163, 168, 171);
+    line-height: 1.2;
+    /*width: calc(100% - 165px);*/
+    width: auto;
+    margin: 0 10px;
+    text-align: center;
+    font-family: 'MuseoSansCyrl-500';
+}
+.cookie p a {
+    color: #ffffff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.cookie p a:hover {
+    color: rgb(0, 200, 83);
+}
+.cookie-btn {
+    display: inline-block;
+    color: #ffffff;
+    padding: 10px 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(96, 125, 139);
+    border-radius: 10px;
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 14px;
+    width: 110px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.cookie-btn:hover {
+    cursor: pointer;
+    background-color: rgb(116, 145, 159);
+}
+
+
 
 
 
@@ -484,5 +756,14 @@ button:hover {
     }
     .header-info-phone-a.mobile {
         display: inline-block;
+    }
+    .popup {
+        padding: 50px 10px;
+    }
+    .cookie p {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 15px;
     }
 }

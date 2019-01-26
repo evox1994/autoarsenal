@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+	var ss = sessionStorage.getItem('site');
+	if ( ss ) {
+		$('.cookie').removeClass('active');
+	} else {
+		sessionStorage.setItem('site','true');
+		$('.cookie').addClass('active');
+	}
+	
+	$('.cookie-btn').click(function(){
+		$('.cookie').removeClass('active');
+	});
+
 	$('.radio-btn').click(function(){
 		if ( $(this).hasClass('active') ) {
 			$(this).removeClass('active');
@@ -8,6 +20,9 @@ $(document).ready(function(){
 			$(this).addClass('active');
 		}
 	});
+
+	$('.fancybox').fancybox();
+	$('input[type="tel"]').inputmask('+7 (999)-999-99-99');
 
 	function Selects() {
 		$('.select-wrap').each(function(){
