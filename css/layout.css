@@ -463,6 +463,9 @@ button:hover {
     body {
         padding-top: 95px;
     }
+    .header .b-block {
+        padding-bottom: 10px;
+    }
     .header-logo {
         box-sizing: border-box;
         padding-right: 10px;

@@ -1,0 +1,38 @@
+.b-1 {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.b-1 .b-block {
+	padding-top: 210px;
+	padding-bottom: 240px;
+	min-height: calc(100vh - 140px);
+}
+.b-1 h1 {
+	display: block;
+	font-family: 'MuseoSansCyrl-700';
+	font-size: 32px;
+	color: rgb(54, 69, 84);
+	margin-bottom: 20px;
+}
+.b-1 h1 span {
+	color: rgb(0, 200, 83);
+}
+.b-1 h2 {
+	display: block;
+	font-family: 'MuseoSansCyrl-500';
+	font-size: 18px;
+	color: rgb(54, 69, 84);
+}
+.b-1 h2 span {
+	color: rgb(0, 200, 83);
+}
+
+
+
+@media screen and (max-width: 767px){
+	.b-1 .b-block {
+		padding-top: 150px;
+		min-height: calc(100vh - 95px);
+	}
+}
