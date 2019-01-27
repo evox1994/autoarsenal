@@ -467,6 +467,7 @@ button:hover {
 }
 .button-text .radio-btn.error {
     border-color: #ff0000;
+    background-color: #ff0000;
 }
 .button-text .radio-btn:hover {
     cursor: pointer;
@@ -548,7 +549,7 @@ button:hover {
     width: 100%;
     border-radius: 5px;
     background-color: rgba(227, 242, 253, 0.302);
-    border: 0;
+    border: 1px solid rgba(227, 242, 253, 0.1);
     font-size: 18px;
     color: #ffffff;
     font-family: 'MuseoSansCyrl-300';
@@ -566,7 +567,7 @@ button:hover {
     width: 100%;
     border-radius: 5px;
     background-color: rgba(227, 242, 253, 0.302);
-    border: 0;
+    border: 1px solid rgba(227, 242, 253, 0.1);
     font-size: 18px;
     color: #ffffff;
     font-family: 'MuseoSansCyrl-300';
@@ -701,6 +702,13 @@ button:hover {
 .cookie-btn:hover {
     cursor: pointer;
     background-color: rgb(116, 145, 159);
+}
+
+form .step {
+    display: none;
+}
+form .step.active {
+    display: block;
 }
 
 

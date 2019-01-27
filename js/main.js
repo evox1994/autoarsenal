@@ -64,4 +64,62 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.form-btn').click(function(){
+		var el = $(this).attr('href');
+		var validInput = true;
+		var validText = true;
+		$(this).parents('.step').find('input').each(function(){
+			if ( !$(this).val().length ){
+				$(this).addClass("error");
+				if ( validInput ){
+					validInput = false;
+				}
+			}
+		});
+		$(this).parents('.step').find('textarea').each(function(){
+			if ( !$(this).val().length ){ 
+				$(this).addClass("error");
+				if ( validText ){
+					validText = false;
+				}
+			}
+		});
+		if ( validInput && validText ){
+			$(this).parents('form').find('.step').removeClass('active');
+			$(this).parents('form').find(el).addClass('active');
+		}
+		return false;
+	});
+
+	$('input').on('input',function(){
+		$(this).removeClass('error');
+	});
+	$('textarea').on('input',function(){
+		$(this).removeClass('error');
+	});
+
+	$('form button[type="submit"]').click(function(){
+		if ( $(this).parents('form').find('.button-text .radio-btn').hasClass('active') ) {
+			$(this).parents('form').find('input').each(function(){
+				if(!$(this).val().length) { 
+					event.preventDefault(); 
+					$(this).addClass("error"); 
+				} else { 
+					$(this).removeClass("error"); 
+				} 
+			});
+			$(this).parents('form').find('textarea').each(function(){
+				if(!$(this).val().length) { 
+					event.preventDefault(); 
+					$(this).addClass("error"); 
+				} else { 
+					$(this).removeClass("error"); 
+				} 
+			});
+		} else {
+			$(this).parents('form').find('.button-text .radio-btn').addClass('error');
+			event.preventDefault();
+		}
+	});
+
 });
