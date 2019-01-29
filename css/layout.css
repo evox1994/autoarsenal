@@ -752,7 +752,6 @@ body.work {
     font-family: 'MuseoSansCyrl-500';
     color: #000000;
     font-size: 20px;
-    white-space: nowrap;
 }
 .work-site p a {
     color: rgb(0, 200, 83);
