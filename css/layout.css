@@ -755,6 +755,7 @@ body.work {
 }
 .work-site p a {
     color: rgb(0, 200, 83);
+    white-space: nowrap;
 }
 
 
