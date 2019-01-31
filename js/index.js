@@ -1,4 +1,18 @@
 $(document).ready(function(){
+	function Yesterday(){
+		var d = new Date();
+		d.setDate(d.getDate() - 1);
+		var dd = d.getDate();
+		if (dd < 10){
+			dd = '0' + dd;
+		}
+		var mm = d.getMonth() + 1;
+		if (mm < 10){
+			mm = '0' + mm;
+		}
+		$('.review-person-date').text( dd + '.' + mm + '.' + d.getFullYear() );
+	}
+	Yesterday();
 
 	$('.b-2-slider').slick({
 		dots: true,

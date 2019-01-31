@@ -394,7 +394,7 @@ button:hover {
 .footer-text .drom-a {
     display: inline-block;
     max-width: 100%;
-    margin-top: 15px;
+    margin-top: 23px;
 }
 .footer-text .drom-a img {
     display: block;
@@ -412,7 +412,7 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 15px auto 0;
+    margin: 23px auto 0;
 }
 .social-list li a {
     display: inline-block;
@@ -706,9 +706,13 @@ button:hover {
 
 form .step {
     display: none;
+    opacity: 0;
 }
 form .step.active {
     display: block;
+}
+.step-item.none {
+    display: none;
 }
 
 body.work {

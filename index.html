@@ -48,7 +48,7 @@
 	<div class="b b-1">
 		<div class="b-block">
 			<h1>Запишись прямо сейчас на <span>бесплатную диагностику</span><br>и получите профессиональную оценку состояния Вашего авто</h1>
-			<ul class="preim-list">
+			<ul class="preim-list step-item step-1">
 				<li>
 					<img src="i/preim-1.png">
 					<span>Диагностика подвески автомобиля</span>
@@ -62,15 +62,19 @@
 					<span>Визуальный контроль навесного оборудования</span>
 				</li>
 			</ul>
-			<form class="i-form">
+			<div class="b-1-step step-item step-2 none">
+				<img src="i/b-1-last.png">
+				<p><span>Последний шаг</span> - заполните свои контактные данные<br>После прохождения диагностики Вы получите гарантию на ремонт до 6 месяцев</p>
+			</div>
+			<form class="i-form" name="b-1-form" method="POST" action="send.php">
 				<div class="step step-1 active">
-					<input type="text" placeholder="Ваша марка авто">
-					<input type="text" placeholder="Год авто">
+					<input type="text" name="auto" placeholder="Ваша марка авто">
+					<input type="text" name="year" placeholder="Год авто">
 					<a href=".step-2" class="form-btn next-btn">Далее</a>
 				</div>
 				<div class="step step-2">
-					<input type="text" placeholder="Ваше имя">
-					<input type="tel" placeholder="Ваш телефон">
+					<input type="text" name="name" placeholder="Ваше имя">
+					<input type="tel" name="phone" placeholder="Ваш телефон">
 					<button type="submit">Записаться</button>
 					<div class="button-text"><div class="radio-btn active"></div>Согласен с условиями<br><a href="#" target="_blank">Пользовательского соглашения</a></div>
 				</div>
@@ -125,16 +129,16 @@
 		<div class="b-block">
 			<h2>Заполните заявку и узнайте стоимость ремонта</h2>
 			<p class="b-3-text"><span>Заполнение займет у вас не более 2 минут.</span></p>
-			<form class="i-form">
+			<form class="i-form" name="b-3-form" method="POST" action="send.php">
 				<div class="step step-1 active">
 					<textarea placeholder="Напишите что нужно отремонтировать"></textarea>
-					<input type="text" placeholder="Ваша марка авто">
-					<input type="text" placeholder="Год авто">
+					<input type="text" name="auto" placeholder="Ваша марка авто">
+					<input type="text" name="year" placeholder="Год авто">
 					<a href=".step-2" class="form-btn next-btn">Далее</a>
 				</div>
 				<div class="step step-2">
-					<input type="text" placeholder="Ваше имя">
-					<input type="tel" placeholder="Ваш телефон">
+					<input type="text" name="name" placeholder="Ваше имя">
+					<input type="tel" name="phone" placeholder="Ваш телефон">
 					<button type="submit">Записаться</button>
 					<div class="button-text"><div class="radio-btn active"></div>Согласен с условиями<br><a href="#" target="_blank">Пользовательского соглашения</a></div>
 				</div>
@@ -273,7 +277,7 @@
 					</div>
 				</li>
 			</ul>
-			<a href="#" class="order-btn">Записаться на ремонт</a>
+			<a href="#popup-2" class="order-btn fancybox">Записаться на ремонт</a>
 		</div>
 	</div>
 
@@ -281,21 +285,21 @@
 		<div class="b-block">
 			<h2>Запишитесь на ремонт вашего авто</h2>
 			<p class="b-6-text"><span>Запишем на удобный день и время</span></p>
-			<form class="i-form">
+			<form class="i-form" name="b-6-form" method="POST" action="send.php">
 				<div class="select-wrap">
 					<div class="select-area">
 						<span>Выбирите услугу</span>
 					</div>
 					<div class="select-drop"></div>
-					<select>
+					<select name="service">
 						<option class="service-1" value="m-1" selected>Услуга-1</option>
 						<option class="service-2" value="m-2">Услуга-2</option>
 					</select>
 				</div>
-				<input type="text" placeholder="Ваша марка авто">
-				<input type="text" placeholder="Год авто">
-				<input type="text" placeholder="Ваше имя">
-				<input type="tel" placeholder="Ваш телефон">
+				<input type="text" name="auto" placeholder="Ваша марка авто">
+				<input type="text" name="year" placeholder="Год авто">
+				<input type="text" name="name" placeholder="Ваше имя">
+				<input type="tel" name="phone" placeholder="Ваш телефон">
 				<button type="submit">Записаться</button>
 				<div class="button-text"><div class="radio-btn active"></div>Согласен с условиями<br><a href="#" target="_blank">Пользовательского соглашения</a></div>
 			</form>
@@ -311,43 +315,43 @@
 					<img src="i/auto-1.png">
 					<div class="li-name">Чистота во всем</div>
 					<p>С самого начала Ваш автомобиль поступает на бесплатную технологическую мойку.Внутрь ремонтного бокса для осмотра подают уже чистый автомобиль. Мы далеко ушли от тесных «гаражных мастерских», в этом вы можете легко убедиться.</p>
-					<a href="#" class="li-btn">Записаться на ремонт</a>
+					<a href="#popup-2" class="li-btn fancybox">Записаться на ремонт</a>
 				</li>
 				<li>
 					<img src="i/auto-2.png">
 					<div class="li-name">Просторное помещение</div>
 					<p>Помещение рассчитано так, чтобы можно было вести диагностику, техническое обслуживание и ремонтные работы сразу для 11 автомобилей. Без очереди и ожидания.</p>
-					<a href="#" class="li-btn">Записаться на ремонт</a>
+					<a href="#popup-2" class="li-btn fancybox">Записаться на ремонт</a>
 				</li>
 				<li>
 					<img src="i/auto-3.png">
 					<div class="li-name">Уход за автомобилем.</div>
 					<p>Мы следим за тем, чтобы во время ремонта не были повреждены другие детали. Бережный уход и точечный ремонт по доступным ценам в городе.</p>
-					<a href="#" class="li-btn">Записаться на ремонт</a>
+					<a href="#popup-2" class="li-btn fancybox">Записаться на ремонт</a>
 				</li>
 				<li>
 					<img src="i/auto-4.png">
 					<div class="li-name">Полная диагностика и ремонт</div>
 					<p>Оборудование позволяет проводить полную диагностику для выявления ремонтных работ именно тех частей, которых необходимо.</p>
-					<a href="#" class="li-btn">Записаться на ремонт</a>
+					<a href="#popup-2" class="li-btn fancybox">Записаться на ремонт</a>
 				</li>
 				<li>
 					<img src="i/auto-5.png">
 					<div class="li-name">Чистота во всем</div>
 					<p>С самого начала Ваш автомобиль поступает на бесплатную технологическую мойку.Внутрь ремонтного бокса для осмотра подают уже чистый автомобиль. Мы далеко ушли от тесных «гаражных мастерских», в этом вы можете легко убедиться.</p>
-					<a href="#" class="li-btn">Записаться на ремонт</a>
+					<a href="#popup-2" class="li-btn fancybox">Записаться на ремонт</a>
 				</li>
 				<li>
 					<img src="i/auto-6.png">
 					<div class="li-name">Комфортное ожидание</div>
 					<p>Пока ожидаете свой автомобиль, мы предоставляем Вам комфортную зону отдыха с телевизором, диванами, кофе и WI-FI. Даже если Вы с ребенком, он сможет себя занять различными детскими журналами, раскрасками и творчеством.</p>
-					<a href="#" class="li-btn">Записаться на ремонт</a>
+					<a href="#popup-2" class="li-btn fancybox">Записаться на ремонт</a>
 				</li>
 				<li>
 					<img src="i/auto-7.png">
 					<div class="li-name">Профессиональные оборудование</div>
 					<p>Современное оборудование и инструмент обеспечивают надежность и гарантию любых технических работ. У нас есть 10 подъемников, шиномонтажный пост, пост диагностик, пост ремонта узлов и агрегатов, пост развал-схождения.</p>
-					<a href="#" class="li-btn">Записаться на ремонт</a>
+					<a href="#popup-2" class="li-btn fancybox">Записаться на ремонт</a>
 				</li>
 			</ul>
 		</div>
@@ -357,12 +361,12 @@
 		<div class="b-block">
 			<h2>Запишитесь на ремонт вашего авто</h2>
 			<p class="b-8-text"><span>Запишем на удобный день и время</span></p>
-			<form class="i-form">
-				<textarea placeholder="Напишите что нужно отремонтировать"></textarea>
-				<input type="text" placeholder="Ваша марка авто">
-				<input type="text" placeholder="Год авто">
-				<input type="text" placeholder="Ваше имя">
-				<input type="tel" placeholder="Ваш телефон">
+			<form class="i-form" name="b-8-form" method="POST" action="send.php">
+				<textarea name="comment" placeholder="Напишите что нужно отремонтировать"></textarea>
+				<input type="text" name="auto" placeholder="Ваша марка авто">
+				<input type="text" name="year" placeholder="Год авто">
+				<input type="text" name="name" placeholder="Ваше имя">
+				<input type="tel" name="phone" placeholder="Ваш телефон">
 				<button type="submit">Записаться</button>
 				<div class="button-text"><div class="radio-btn active"></div>Согласен с условиями<br><a href="#" target="_blank">Пользовательского соглашения</a></div>
 			</form>
@@ -415,9 +419,9 @@
 		<div class="popup" id="popup-1">
 			<div class="popup-name">Закажите <span>обратный звонок</span></div>
 			<div class="popup-subname">Наш специалист свяжется с Вами в <span>ближайшее время</span></div>
-			<form>
-				<input type="text" placeholder="Ваше имя">
-				<input type="tel" placeholder="Ваш телефон">
+			<form name="popup-1-form" method="POST" action="send.php">
+				<input type="text" name="name" placeholder="Ваше имя">
+				<input type="tel" name="phone" placeholder="Ваш телефон">
 				<button type="submit">Записаться на диагностику</button>
 				<div class="button-text"><div class="radio-btn active"></div>Согласен с условиями<br><a href="#" target="_blank">Пользовательского соглашения</a></div>
 			</form>
@@ -426,9 +430,9 @@
 		<div class="popup" id="popup-2">
 			<div class="popup-name">Запишитесь на <span>выбранную услугу</span></div>
 			<div class="popup-subname">Наш специалист свяжется с Вами в <span>ближайшее время</span></div>
-			<form>
-				<input type="text" placeholder="Ваше имя">
-				<input type="tel" placeholder="Ваш телефон">
+			<form name="popup-2-form" method="POST" action="send.php">
+				<input type="text" name="name" placeholder="Ваше имя">
+				<input type="tel" name="phone" placeholder="Ваш телефон">
 				<button type="submit">Записаться на диагностику</button>
 				<div class="button-text"><div class="radio-btn active"></div>Согласен с условиями<br><a href="#" target="_blank">Пользовательского соглашения</a></div>
 			</form>

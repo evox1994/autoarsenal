@@ -7,6 +7,8 @@ $(document).ready(function(){
 		sessionStorage.setItem('site','true');
 		$('.cookie').addClass('active');
 	}
+
+	$('.step.active').css('opacity',1);
 	
 	$('.cookie-btn').click(function(){
 		$('.cookie').removeClass('active');
@@ -65,6 +67,7 @@ $(document).ready(function(){
 	});
 
 	$('.form-btn').click(function(){
+		var btn = this;
 		var el = $(this).attr('href');
 		var validInput = true;
 		var validText = true;
@@ -85,8 +88,14 @@ $(document).ready(function(){
 			}
 		});
 		if ( validInput && validText ){
-			$(this).parents('form').find('.step').removeClass('active');
-			$(this).parents('form').find(el).addClass('active');
+			$(this).parents('form').find('.step').animate({'opacity': 0}, 300);
+			setTimeout(function(){
+				$(btn).parents('form').find('.step').removeClass('active');
+				$(btn).parents('form').find(el).addClass('active');
+				$(btn).parents('.b-block').find('.step-item').addClass('none');
+				$(btn).parents('.b-block').find(el).removeClass('none');
+				$(btn).parents('form').find(el).animate({'opacity': 1},300);
+			},300);
 		}
 		return false;
 	});
