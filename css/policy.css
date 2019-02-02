@@ -1,0 +1,28 @@
+.b-1 .b-block {
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+.b-1 {
+	color: rgb(35, 30, 30);
+	background-color: rgb(243, 243, 243);
+}
+.b-1 a {
+	color: #00e676;
+}
+.b-1 .main-caption {
+	display: block;
+	font-family: 'MuseoSansCyrl-700';
+	font-size: 36px;
+}
+.b-1 .second-caption {
+	font-size: 24px;
+	margin: 60px auto 40px;
+	font-family: 'MuseoSansCyrl-700';
+}
+.b-1 p {
+	display: block;
+	text-align: left;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+}

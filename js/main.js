@@ -131,4 +131,11 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.scroll-btn').click(function(){
+		var el = $(this).attr('href');
+		var des = $(el).offset().top;
+		$('html,body').animate({scrollTop: des},800);
+		return false;
+	});
+
 });

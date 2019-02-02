@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	function Yesterday(){
 		var d = new Date();
 		d.setDate(d.getDate() - 1);
@@ -33,6 +34,18 @@ $(document).ready(function(){
 				}
 			}
 		]
+	});
+
+	$('.more-a').click(function(){
+		var el = $(this).attr('href');
+		if ( $(el).hasClass('active') ){
+			$(el).removeClass('active');
+			$(this).text('Подробнее');
+		} else {
+			$(el).addClass('active');
+			$(this).text('Скрыть');
+		}
+		return false;
 	});
 
 });

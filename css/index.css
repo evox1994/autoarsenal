@@ -81,6 +81,16 @@
 	color: rgb(55, 71, 79);
 	line-height: 1.5;
 	margin-bottom: 10px;
+	text-align: center;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	overflow: hidden;
+	max-height: 66px;
+}
+.b-2-text.active {
+	max-height: 500px;
 }
 .b-2 .more-a {
 	display: inline-block;
@@ -838,6 +848,9 @@
 	}
 	.b-1-text span {
 		display: none;
+	}
+	.b-2-text.active {
+		max-height: 1000px;
 	}
 	.preim-list {
 		display: block;
